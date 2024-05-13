@@ -1,51 +1,54 @@
 
 # Oil Case Analysis and World Development Indicators (WDI) Subset Analysis
-## Project Description
-This project involves the analysis of two datasets: the Oil Case dataset and a subset of the World Development Indicators (WDI) dataset. The goal is to perform statistical analysis, data visualization, and regression modeling to gain insights into factors related to oil production and development indicators.
+## Overview
+This project analyzes oil production data and its impact on Gross Domestic Product (GDP) using various statistical techniques in R. The analysis includes descriptive statistics, visualizations, regression models, and discussions on the implications of the findings.
 
-## Technologies Used
-R programming language
-Libraries such as readxl, stargazer, ggplot2, tidyverse, plm, and lme4 for data manipulation, visualization, and regression modeling.
-Oil Case Analysis
-Data Import and Cleaning
-The Oil Case dataset is imported and cleaned, ensuring correct variable formats.
+## Data and Variables
+The dataset includes variables related to oil production, GDP, political stability, labor force participation, and more. Key variables analyzed include:
 
-## Summary Statistics
-Descriptive statistics are generated for key variables using the stargazer package.
+Oil Production (Physical Measure)
+Net Value of Oil Exports (in US Dollars)
+GDP per Capita (in US Dollars)
+Political Stability (Polity Index)
+Labor Force Participation (Female)
+GDP Growth Rate
+Natural Conflict Onset
+Population Size
+Age Dependency Ratio
+Birth Rate per 1000
+Methodology and Techniques
+Data Cleaning and Preparation:
 
-## Data Visualization
-Histograms and bar charts are created to visualize oil production, net oil exports value, and oil availability.
-Scatter plots and box plots are used to explore associations between variables like oil production, net oil exports, oil availability, and polity scores.
-Linear Regression
-Linear regression models are fitted to explore relationships between variables like polity scores and net oil exports value.
+## Loaded and cleaned the dataset using readr library.
+Checked for missing values and performed necessary data transformations.
 
-## Multiple Linear Regression
-A multiple linear regression model is developed to analyze the combined effects of oil production, net oil exports, and oil availability on polity scores.
+## Descriptive Statistics:
+Computed descriptive statistics such as mean, standard deviation, minimum, and maximum for key variables.
 
-## WDI Subset Analysis
-Data Import
-A subset of the World Development Indicators dataset is imported for further analysis.
+## Data Visualizations:
+Created line plots, scatter plots, and correlation matrices using ggplot2 and corrplot libraries.
+Visualized trends, relationships, and correlations between variables.
 
-Summary Statistics
-Descriptive statistics are calculated for selected indicators using the stargazer package.
+## Regression Analysis:
+Conducted linear regression analysis to model relationships between variables.
+Examined coefficients, standard errors, t-values, and p-values to assess significance and impact.
 
-Variance Analysis
-Within-group and between-group variances are computed to understand the variability in birth rates across countries.
+## Discussion and Implications:
+Interpreted analysis findings and discussed implications for oil production, GDP, political stability, and societal factors.
+Explored confounding variables and potential biases in the analysis.
 
-Panel Regression
-Panel regression with fixed effects is performed using the plm package to analyze the relationship between GDP growth and birth rates.
+## Files Included
+R Script:
+Contains the R code used for data loading, cleaning, analysis, and visualization.
 
-Ordinary Least Squares (OLS) Regression
-An OLS regression model is run to examine the relationship between GDP growth and birth rates in the WDI subset dataset.
+README File:
+This document providing an overview of the project, methodology, key variables, and techniques used.
 
-## Installation Instructions
+## Instructions for Replication
 Clone the repository to your local machine.
-Ensure you have R installed along with the required packages listed in the R scripts.
-Run the provided R scripts in the specified order to perform data analysis, visualization, and regression modeling.
+Install R and the required libraries (readr, ggplot2, psych, corrplot, lm) if not already installed.
+Run the provided R script in your preferred R environment or IDE to replicate the analysis.
+Modify the code or add additional analyses as needed for further exploration.
 
-## Usage
-Modify the scripts or add new analyses as needed for further exploration of the datasets.
-Run the scripts in an R environment or IDE to execute the analyses and generate visualizations.
-Results and Insights
-The project provides insights into factors related to oil production, net oil exports, and their impact on polity scores.
-It also explores development indicators and their relationship with birth rates using regression analysis.
+## Conclusion
+This project offers insights into the relationships between oil production, GDP, political stability, and other socio-economic factors. The findings contribute to understanding the impact of oil on economies and societal dynamics.
